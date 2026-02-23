@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "worker-publisher-template",
+	"main": "./src/index.ts",
+	"compatibility_date": "2025-10-08",
+	"upload_source_maps": true,
+	"dispatch_namespaces": [
+		{
+			"binding": "DISPATCHER",
+			"namespace": "my-dispatch-namespace",
+			"remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"CLOUDFLARE_ACCOUNT_ID": "a8601b9e504fafa09ccdc1a06825a8a4",
+		"READONLY": "true"
+	}
+}
